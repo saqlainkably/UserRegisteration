@@ -35,5 +35,18 @@ public class Main {
             System.out.println("VALID EMAIL");
         else
             System.out.println("INVALID EMAIL");
+
+        System.out.println("Enter mobile number with country code, space followed by 10 digit number");
+        sc.nextLine();
+        String phoneNumber=sc.nextLine();
+        String mobileRegex = "^\\d{2} \\d{10}$";
+        Pattern CompiledMobile = Pattern.compile(mobileRegex);
+        Matcher matcherPhone =CompiledMobile.matcher(phoneNumber);
+        if(matcherPhone.matches())
+            System.out.println("VALID");
+        else
+            System.out.println("INVALID");
+
+
     }
 }
