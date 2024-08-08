@@ -16,5 +16,12 @@ public class Main {
         Pattern compiledPattern = Pattern.compile(pattern);
         Matcher matcher = compiledPattern.matcher(fName);
         System.out.println(matcher.matches());
+
+
+        System.out.println("Enter last name");
+        String lName=sc.next();
+        Matcher matcher2 = compiledPattern.matcher(lName);
+        System.out.println(matcher2.matches());
+
     }
 }
