@@ -47,14 +47,16 @@ public class Main {
         else
             System.out.println("INVALID");
 
-        System.out.println("Enter password minimum 8 characters");
+        System.out.println("Enter password minimum 8 characters 1 uppercase and 1 number");
         String password=sc.nextLine();
-        Pattern compiledPassword=Pattern.compile(password);
+        String passwordRegex="^(?=.*[A-Z])(?=.*\\d).{8,}$";
+        Pattern compiledPassword=Pattern.compile(passwordRegex);
         Matcher matchPassword=compiledPassword.matcher(password);
         if(matchPassword.matches())
             System.out.println("VALID");
         else
             System.out.println("INVALID");
+
 
     }
 }
