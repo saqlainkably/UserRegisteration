@@ -47,6 +47,14 @@ public class Main {
         else
             System.out.println("INVALID");
 
+        System.out.println("Enter password minimum 8 characters");
+        String password=sc.nextLine();
+        Pattern compiledPassword=Pattern.compile(password);
+        Matcher matchPassword=compiledPassword.matcher(password);
+        if(matchPassword.matches())
+            System.out.println("VALID");
+        else
+            System.out.println("INVALID");
 
     }
 }
