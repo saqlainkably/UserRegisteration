@@ -4,8 +4,6 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -15,13 +13,27 @@ public class Main {
         String pattern = "^[A-Z][a-zA-Z]{2,}$";
         Pattern compiledPattern = Pattern.compile(pattern);
         Matcher matcher = compiledPattern.matcher(fName);
-        System.out.println(matcher.matches());
-
+        if(matcher.matches())
+            System.out.println("VALID FIRST NAME");
+        else
+            System.out.println("INVALID FIRST NAME");
 
         System.out.println("Enter last name");
         String lName=sc.next();
         Matcher matcher2 = compiledPattern.matcher(lName);
-        System.out.println(matcher2.matches());
+        if(matcher2.matches())
+            System.out.println("VALID LAST NAME");
+        else
+            System.out.println("INVALID LAST NAME");
 
+        System.out.println("Enter email-id ");
+        String email=sc.next();
+        String pattern2 = "^[a-zA-Z0-9.%+-]+\\.[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}(\\.[a-zA-Z]{2,6})?$";
+        Pattern compiledPattern2 = Pattern.compile(pattern2);
+        Matcher matcher3 = compiledPattern2.matcher(email);
+        if(matcher3.matches())
+            System.out.println("VALID EMAIL");
+        else
+            System.out.println("INVALID EMAIL");
     }
 }
