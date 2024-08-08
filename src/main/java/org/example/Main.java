@@ -26,6 +26,9 @@ public class Main {
         else
             System.out.println("INVALID LAST NAME");
 
+        System.out.println("Enter the number of emails : ");
+        int n=sc.nextInt();
+        for (int i=0;i<n;i++) {
         System.out.println("Enter email-id ");
         String email=sc.next();
         String pattern2 = "^[a-zA-Z0-9.%+-]+\\.[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}(\\.[a-zA-Z]{2,6})?$";
@@ -35,7 +38,7 @@ public class Main {
             System.out.println("VALID EMAIL");
         else
             System.out.println("INVALID EMAIL");
-
+      }
         System.out.println("Enter mobile number with country code, space followed by 10 digit number");
         sc.nextLine();
         String phoneNumber=sc.nextLine();
