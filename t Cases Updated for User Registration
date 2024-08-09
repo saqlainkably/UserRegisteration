@@ -1,0 +1,12 @@
+[33md0bea0c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/UC11_JUNIT_PARAMETERISEDTEST[m[33m, [m[1;32mUC11_JUNIT_PARAMETERISEDTEST[m[33m)[m Added: Parameterised Test Updated
+[33m283bc8b[m[33m ([m[1;31morigin/UC10_JUNIT_TEST[m[33m, [m[1;32mUC10_JUNIT_TEST[m[33m)[m Added: Test Cases Updated for User Registration
+[33m078e315[m[33m ([m[1;31morigin/UC9_ALLEMAILSAMPLES[m[33m, [m[1;32mUC9_ALLEMAILSAMPLES[m[33m)[m Added: Multiple Emails Accepted
+[33m7ede4e1[m[33m ([m[1;31morigin/UC8_PasswordRule4[m[33m, [m[1;32mUC8_PasswordRule4[m[33m)[m Added: User's Password with atleast one special character
+[33m53fc1ff[m[33m ([m[1;31morigin/UC7_PasswordRule3[m[33m, [m[1;32mUC7_PasswordRule3[m[33m)[m Added: User's Password with UpperCase and OneNumber Atleast
+[33m3020e0b[m[33m ([m[1;31morigin/UC5_PasswordValidation[m[33m, [m[1;31morigin/Password_Validation[m[33m, [m[1;32mUC5_PasswordValidation[m[33m)[m Added: User's Password Validation
+[33mb1216a0[m[33m ([m[1;31morigin/UC4_PhoneNumber_Validation[m[33m, [m[1;32mUC4_PhoneNumber_Validation[m[33m)[m Added: Phone Number Validation
+[33mddd2a39[m[33m ([m[1;31morigin/UC3_Email[m[33m, [m[1;32mUC3_Email[m[33m)[m Added: User's Email
+[33m9f70ea9[m[33m ([m[1;31morigin/UC2_LastName[m[33m, [m[1;32mUC2_LastName[m[33m)[m Added: User's Last Name
+[33m50e77eb[m[33m ([m[1;31morigin/UC1_FirstName[m[33m, [m[1;32mUC1_FirstName[m[33m)[m Added: User's First Name
+[33m71179d0[m Initial Commit
+[33m9102269[m Initial Commit
