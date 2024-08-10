@@ -1,3 +1,4 @@
+import org.example.CustomException;
 import org.example.Main;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,32 +10,32 @@ public class UserRegistratiopnTest {
 
 
     @Test
-    public void fnameTest() {
-        String fname = Main.fNameValidate("Saqlain");
+    public void fnameTest() throws CustomException {
+        String fname = String.valueOf(Main.fNameValidate("Saqlain"));
         Assert.assertEquals("HAPPY", fname);
     }
 
     @Test
-    public void lnameTest() {
-        String lname = Main.lNameValidate("Kably");
+    public void lnameTest() throws CustomException {
+        String lname = String.valueOf(Main.lNameValidate("Kably"));
         Assert.assertEquals("HAPPY", lname);
     }
 
     @Test
-    public void emailTest() {
-        String email = Main.emailValidate("Saqlain.kablyy1@gmail.com");
+    public void emailTest() throws CustomException {
+        String email = String.valueOf(Main.emailValidate("Saqlain.kablyy1@gmail.com"));
         Assert.assertEquals("HAPPY", email);
     }
 
     @Test
-    public void phoneNumberTest() {
-        String phoneNumber = Main.phoneNumberValidate("91 8555829900");
+    public void phoneNumberTest() throws CustomException {
+        String phoneNumber = String.valueOf(Main.phoneNumberValidate("91 8555829900"));
         Assert.assertEquals("HAPPY", phoneNumber);
     }
 
     @Test
-    public void passwordTest() {
-        String password = Main.passwordValidate("Saqlain@123");
+    public void passwordTest() throws  CustomException{
+        String password = String.valueOf(Main.passwordValidate("Saqlain@123"));
         Assert.assertEquals("HAPPY", password);
     }
 
@@ -47,8 +48,8 @@ public class UserRegistratiopnTest {
 //            "@example.com",
 //            "user@.com.my"
     })
-    void validEmail (String mail){
-        String result= Main.emailValidate(mail);
+    void validEmail (String mail) throws CustomException {
+        String result= String.valueOf(Main.emailValidate(mail));
         Assert.assertEquals("HAPPY",result);
     }
 
